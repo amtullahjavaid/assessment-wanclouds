@@ -21,3 +21,5 @@ I did not experience any issues in the implementation of this task.
 ## Additional Features
 1. Implemented persistent storage.
 2. Implemented light and dark theme.
+3. Implemented search and filter functionality for the user table.
+4. Implemented functionality to export user data.

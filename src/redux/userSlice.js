@@ -7,7 +7,6 @@ const userSlice = createSlice({
   },
   reducers: {
     addUser: (state, action) => {
-      // Create a new user with a unique ID
       const newUser = {
         id: Date.now(),
         ...action.payload
