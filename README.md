@@ -16,7 +16,19 @@
 - Yup: Form validation
 
 ## Issues Faced and Solutions
-I did not experience any issues in the implementation of this task.
+1. User Interface Consistency
+   - Challenge:
+        It was hard to keep the design of the app looking the same everywhere. Different parts had slightly different colors, spacing, and styles, which made it look messy.
+
+    -Solution:
+        I fixed this by using a common set of colors and spacing through variables. This made the whole app look more consistent and easier to manage.
+
+2. Responsive Layout Issues
+    -Challenge:
+        The layout didn’t look good on smaller screens. Some elements were overlapping or not showing properly.
+
+    -Solution:
+        I used media queries and made the layout responsive. Now it adjusts automatically based on screen size and works well on all devices.
 
 ## Additional Features
 1. Implemented persistent storage.
