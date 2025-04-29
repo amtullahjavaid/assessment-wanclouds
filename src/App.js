@@ -1,29 +1,24 @@
-import logo from './logo.svg';
-import header from './components/Layout/Header.js';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import Layout from './components/Layout/Layout';
+import FormPage from './pages/FormPage';
+import TablePage from './pages/TablePage';
+import './styles/styles.css';
 
 function App() {
   return (
-    <header>
-           AJ
-          </header>
-  
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <Provider store={store}>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<FormPage />} />
+            <Route path="/users" element={<TablePage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </Provider>
   );
 }
 
